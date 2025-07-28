@@ -11,7 +11,6 @@ var handleRequest = function(request, response) {
   response.write(host);
   response.end(" | v=0\n");
 
-  // Fixed: no unterminated string literal across lines
   console.log(
     "Running On:", host,
     "| Total Requests:", ++requests,
